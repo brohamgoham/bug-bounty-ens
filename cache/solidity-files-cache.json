@@ -1,0 +1,4440 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnsregistrar/DNSClaimChecker.sol": {
+      "lastModificationDate": 1681526933426,
+      "contentHash": "e9595eb8ec6234a63e3ce09a8e070615",
+      "sourceName": "contracts/dnsregistrar/DNSClaimChecker.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../dnssec-oracle/DNSSEC.sol",
+        "../dnssec-oracle/BytesUtils.sol",
+        "../dnssec-oracle/RRUtils.sol",
+        "../utils/HexUtils.sol",
+        "@ensdomains/buffer/contracts/Buffer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "DNSClaimChecker"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnssec-oracle/DNSSEC.sol": {
+      "lastModificationDate": 1681526933428,
+      "contentHash": "72ac8dae8e90d3050c2e31c42f409c9b",
+      "sourceName": "contracts/dnssec-oracle/DNSSEC.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "DNSSEC"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnssec-oracle/BytesUtils.sol": {
+      "lastModificationDate": 1681526933428,
+      "contentHash": "63912c72fea55a5ab5eab4f26ae091b8",
+      "sourceName": "contracts/dnssec-oracle/BytesUtils.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "BytesUtils"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnssec-oracle/RRUtils.sol": {
+      "lastModificationDate": 1681526933428,
+      "contentHash": "a3dccd85137ff350fbfded5d719fb4ed",
+      "sourceName": "contracts/dnssec-oracle/RRUtils.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./BytesUtils.sol",
+        "@ensdomains/buffer/contracts/Buffer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "RRUtils"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/utils/HexUtils.sol": {
+      "lastModificationDate": 1681526933434,
+      "contentHash": "6917d77429e4cbdd4284fffd5b22c06b",
+      "sourceName": "contracts/utils/HexUtils.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "HexUtils"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/node_modules/@ensdomains/buffer/contracts/Buffer.sol": {
+      "lastModificationDate": 1681526936996,
+      "contentHash": "d3d00f20f206848f1e90d596ebcc557b",
+      "sourceName": "@ensdomains/buffer/contracts/Buffer.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Buffer"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnsregistrar/DNSRegistrar.sol": {
+      "lastModificationDate": 1681526933426,
+      "contentHash": "bbe71c454f6743a9aafa8503fca28c77",
+      "sourceName": "contracts/dnsregistrar/DNSRegistrar.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+        "@ensdomains/buffer/contracts/Buffer.sol",
+        "../dnssec-oracle/BytesUtils.sol",
+        "../dnssec-oracle/DNSSEC.sol",
+        "../dnssec-oracle/RRUtils.sol",
+        "../registry/ENSRegistry.sol",
+        "../root/Root.sol",
+        "../resolvers/profiles/AddrResolver.sol",
+        "./DNSClaimChecker.sol",
+        "./PublicSuffixList.sol",
+        "./IDNSRegistrar.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "DNSRegistrar"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/registry/ENSRegistry.sol": {
+      "lastModificationDate": 1681526933430,
+      "contentHash": "2ce978cf8b1e125f5249c7b0bd1cd23b",
+      "sourceName": "contracts/registry/ENSRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ENS.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "ENSRegistry"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/root/Root.sol": {
+      "lastModificationDate": 1681526933433,
+      "contentHash": "6afc8d9bcdf69af0f2149f333706ab7e",
+      "sourceName": "contracts/root/Root.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../registry/ENS.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./Controllable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Root"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/AddrResolver.sol": {
+      "lastModificationDate": 1681526933431,
+      "contentHash": "0e468223eb21a28b39da0108a56a7f86",
+      "sourceName": "contracts/resolvers/profiles/AddrResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ResolverBase.sol",
+        "./IAddrResolver.sol",
+        "./IAddressResolver.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "AddrResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnsregistrar/PublicSuffixList.sol": {
+      "lastModificationDate": 1681526933426,
+      "contentHash": "ea4453aee9dd691bd99088989261745e",
+      "sourceName": "contracts/dnsregistrar/PublicSuffixList.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "PublicSuffixList"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnsregistrar/IDNSRegistrar.sol": {
+      "lastModificationDate": 1681526933426,
+      "contentHash": "aad81426cab4266155e1078bb96f73e8",
+      "sourceName": "contracts/dnsregistrar/IDNSRegistrar.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../dnssec-oracle/DNSSEC.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "IDNSRegistrar"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1681526938308,
+      "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/registry/ENS.sol": {
+      "lastModificationDate": 1681526933430,
+      "contentHash": "d7f00c64cdab1ddb053002d600ee4ae7",
+      "sourceName": "contracts/registry/ENS.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "ENS"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/root/Controllable.sol": {
+      "lastModificationDate": 1681526933433,
+      "contentHash": "9c0ab95876c7df7eb9823db8f437d0f5",
+      "sourceName": "contracts/root/Controllable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Controllable"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1681526936973,
+      "contentHash": "e436cea06129be2c73cda4b1acc848b5",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1681526936977,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/ResolverBase.sol": {
+      "lastModificationDate": 1681526933431,
+      "contentHash": "1abdd87256a7252b8869069e2562cbfd",
+      "sourceName": "contracts/resolvers/ResolverBase.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+        "./profiles/IVersionableResolver.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "ResolverBase"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/IAddrResolver.sol": {
+      "lastModificationDate": 1681526933432,
+      "contentHash": "3f1fad68ada48982f35ef7af2e8a245b",
+      "sourceName": "contracts/resolvers/profiles/IAddrResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "IAddrResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/IAddressResolver.sol": {
+      "lastModificationDate": 1681526933432,
+      "contentHash": "6f8242d10df510af914b58122a33d176",
+      "sourceName": "contracts/resolvers/profiles/IAddressResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "IAddressResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/IVersionableResolver.sol": {
+      "lastModificationDate": 1681526933433,
+      "contentHash": "6bfec345bfec30f11192e357c3f145b4",
+      "sourceName": "contracts/resolvers/profiles/IVersionableResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "IVersionableResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1681526938307,
+      "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/node_modules/@openzeppelin/contracts/token/ERC1155/IERC1155.sol": {
+      "lastModificationDate": 1681526938309,
+      "contentHash": "d5a8f6e07ca38ec384856cfe9f08a867",
+      "sourceName": "@openzeppelin/contracts/token/ERC1155/IERC1155.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/wrapper/INameWrapper.sol": {
+      "lastModificationDate": 1681526933435,
+      "contentHash": "4221ca62232275df3ca728f641cc9c46",
+      "sourceName": "contracts/wrapper/INameWrapper.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../registry/ENS.sol",
+        "../ethregistrar/IBaseRegistrar.sol",
+        "@openzeppelin/contracts/token/ERC1155/IERC1155.sol",
+        "./IMetadataService.sol",
+        "./INameWrapperUpgrade.sol"
+      ],
+      "versionPragmas": [
+        "~0.8.17"
+      ],
+      "artifacts": [
+        "INameWrapper"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/ethregistrar/IBaseRegistrar.sol": {
+      "lastModificationDate": 1681526933430,
+      "contentHash": "5d34ef923c86f6769bb7369d13d70f94",
+      "sourceName": "contracts/ethregistrar/IBaseRegistrar.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../registry/ENS.sol",
+        "./IBaseRegistrar.sol",
+        "@openzeppelin/contracts/token/ERC721/IERC721.sol"
+      ],
+      "versionPragmas": [],
+      "artifacts": [
+        "IBaseRegistrar"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/wrapper/IMetadataService.sol": {
+      "lastModificationDate": 1681526933435,
+      "contentHash": "c4f9cc5e13f40eeb6884c379639b760a",
+      "sourceName": "contracts/wrapper/IMetadataService.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "~0.8.17"
+      ],
+      "artifacts": [
+        "IMetadataService"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/wrapper/INameWrapperUpgrade.sol": {
+      "lastModificationDate": 1681526933435,
+      "contentHash": "11b084a2c37ce20b4b2aa548776721f8",
+      "sourceName": "contracts/wrapper/INameWrapperUpgrade.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "~0.8.17"
+      ],
+      "artifacts": [
+        "INameWrapperUpgrade"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1681526938309,
+      "contentHash": "eb7e61db29f31d88b3c1cef1b063d338",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/utils/UniversalResolver.sol": {
+      "lastModificationDate": 1681526933434,
+      "contentHash": "d6f40ed08f729a17f8f32688a190e893",
+      "sourceName": "contracts/utils/UniversalResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/utils/Address.sol",
+        "./LowLevelCallUtils.sol",
+        "../registry/ENS.sol",
+        "../resolvers/profiles/IExtendedResolver.sol",
+        "../resolvers/Resolver.sol",
+        "./NameEncoder.sol",
+        "../wrapper/BytesUtils.sol",
+        "./HexUtils.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.17 <0.9.0"
+      ],
+      "artifacts": [
+        "BatchGateway",
+        "UniversalResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/utils/LowLevelCallUtils.sol": {
+      "lastModificationDate": 1681526933434,
+      "contentHash": "ff97b10053e28bef75d180cdeb0b08a1",
+      "sourceName": "contracts/utils/LowLevelCallUtils.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.13"
+      ],
+      "artifacts": [
+        "LowLevelCallUtils"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/IExtendedResolver.sol": {
+      "lastModificationDate": 1681526933432,
+      "contentHash": "5fb946efa195615f0fbe2746a4e76ff6",
+      "sourceName": "contracts/resolvers/profiles/IExtendedResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "IExtendedResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/Resolver.sol": {
+      "lastModificationDate": 1681526933431,
+      "contentHash": "5714c29b34e7081d6ccd966e7e885a1b",
+      "sourceName": "contracts/resolvers/Resolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+        "./profiles/IABIResolver.sol",
+        "./profiles/IAddressResolver.sol",
+        "./profiles/IAddrResolver.sol",
+        "./profiles/IContentHashResolver.sol",
+        "./profiles/IDNSRecordResolver.sol",
+        "./profiles/IDNSZoneResolver.sol",
+        "./profiles/IInterfaceResolver.sol",
+        "./profiles/INameResolver.sol",
+        "./profiles/IPubkeyResolver.sol",
+        "./profiles/ITextResolver.sol",
+        "./profiles/IExtendedResolver.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "Resolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/utils/NameEncoder.sol": {
+      "lastModificationDate": 1681526933434,
+      "contentHash": "00d0b9f8cc29e1cbe47c43afcab1d8db",
+      "sourceName": "contracts/utils/NameEncoder.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../wrapper/BytesUtils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.13"
+      ],
+      "artifacts": [
+        "NameEncoder"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/wrapper/BytesUtils.sol": {
+      "lastModificationDate": 1681526933435,
+      "contentHash": "83f130791c47afc6801e6c5d8ad76404",
+      "sourceName": "contracts/wrapper/BytesUtils.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "~0.8.17"
+      ],
+      "artifacts": [
+        "BytesUtils"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1681526936976,
+      "contentHash": "f31ad6fc4bbf9c06203987220156a6ba",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/IABIResolver.sol": {
+      "lastModificationDate": 1681526933431,
+      "contentHash": "8aafef3ad6058617f5b719861e406a4d",
+      "sourceName": "contracts/resolvers/profiles/IABIResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "IABIResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/IContentHashResolver.sol": {
+      "lastModificationDate": 1681526933432,
+      "contentHash": "f9e7dc8b82306ecd1504ba9b10716631",
+      "sourceName": "contracts/resolvers/profiles/IContentHashResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "IContentHashResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/IDNSRecordResolver.sol": {
+      "lastModificationDate": 1681526933432,
+      "contentHash": "c61d99362d86e11c143e9035d895a1da",
+      "sourceName": "contracts/resolvers/profiles/IDNSRecordResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "IDNSRecordResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/IDNSZoneResolver.sol": {
+      "lastModificationDate": 1681526933432,
+      "contentHash": "4e7595256b231fed30f6c9945f1efa45",
+      "sourceName": "contracts/resolvers/profiles/IDNSZoneResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "IDNSZoneResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/IInterfaceResolver.sol": {
+      "lastModificationDate": 1681526933432,
+      "contentHash": "a7500941f527de797e9d353be520ef1c",
+      "sourceName": "contracts/resolvers/profiles/IInterfaceResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "IInterfaceResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/INameResolver.sol": {
+      "lastModificationDate": 1681526933432,
+      "contentHash": "3765ef37775da4202d0bc972a5e3a626",
+      "sourceName": "contracts/resolvers/profiles/INameResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "INameResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/IPubkeyResolver.sol": {
+      "lastModificationDate": 1681526933432,
+      "contentHash": "51e1427b16cc36011b47d224dd7a9292",
+      "sourceName": "contracts/resolvers/profiles/IPubkeyResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "IPubkeyResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/ITextResolver.sol": {
+      "lastModificationDate": 1681526933432,
+      "contentHash": "db2783ebbe0ddc0a8f69fd69795099c3",
+      "sourceName": "contracts/resolvers/profiles/ITextResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "ITextResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/test/utils/mocks/DummyOffchainResolver.sol": {
+      "lastModificationDate": 1681526933472,
+      "contentHash": "611efd40a4b464f8750055adf140bf3d",
+      "sourceName": "test/utils/mocks/DummyOffchainResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+        "../../../contracts/resolvers/profiles/IExtendedResolver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "DummyOffchainResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/TextResolver.sol": {
+      "lastModificationDate": 1681526933433,
+      "contentHash": "f4e649e282afefd6b74742953e4a1182",
+      "sourceName": "contracts/resolvers/profiles/TextResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ResolverBase.sol",
+        "./ITextResolver.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "TextResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/PubkeyResolver.sol": {
+      "lastModificationDate": 1681526933433,
+      "contentHash": "dc219f4ed7c3e9423c1b69883192e17a",
+      "sourceName": "contracts/resolvers/profiles/PubkeyResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ResolverBase.sol",
+        "./IPubkeyResolver.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "PubkeyResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/PublicResolver.sol": {
+      "lastModificationDate": 1681526933431,
+      "contentHash": "943d87bd81a3648aeb82144eab0600aa",
+      "sourceName": "contracts/resolvers/PublicResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../registry/ENS.sol",
+        "./profiles/ABIResolver.sol",
+        "./profiles/AddrResolver.sol",
+        "./profiles/ContentHashResolver.sol",
+        "./profiles/DNSResolver.sol",
+        "./profiles/InterfaceResolver.sol",
+        "./profiles/NameResolver.sol",
+        "./profiles/PubkeyResolver.sol",
+        "./profiles/TextResolver.sol",
+        "./Multicallable.sol",
+        "../reverseRegistrar/ReverseClaimer.sol",
+        "../wrapper/INameWrapper.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.17 <0.9.0"
+      ],
+      "artifacts": [
+        "PublicResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/ABIResolver.sol": {
+      "lastModificationDate": 1681526933431,
+      "contentHash": "3797d3c26a69954b8a5314486c0ffebc",
+      "sourceName": "contracts/resolvers/profiles/ABIResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IABIResolver.sol",
+        "../ResolverBase.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "ABIResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/ContentHashResolver.sol": {
+      "lastModificationDate": 1681526933431,
+      "contentHash": "345e69e7cd01fd0fe4d22fb2f93e3af3",
+      "sourceName": "contracts/resolvers/profiles/ContentHashResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ResolverBase.sol",
+        "./IContentHashResolver.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "ContentHashResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/DNSResolver.sol": {
+      "lastModificationDate": 1681526933431,
+      "contentHash": "615be5d47b962507a300be6049d73df9",
+      "sourceName": "contracts/resolvers/profiles/DNSResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ResolverBase.sol",
+        "../../dnssec-oracle/RRUtils.sol",
+        "./IDNSRecordResolver.sol",
+        "./IDNSZoneResolver.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "DNSResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/InterfaceResolver.sol": {
+      "lastModificationDate": 1681526933433,
+      "contentHash": "044a035d03882bf13dab46b830c55340",
+      "sourceName": "contracts/resolvers/profiles/InterfaceResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+        "../ResolverBase.sol",
+        "./AddrResolver.sol",
+        "./IInterfaceResolver.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "InterfaceResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/NameResolver.sol": {
+      "lastModificationDate": 1681526933433,
+      "contentHash": "6ae8a960a85d325cea01338b108f4628",
+      "sourceName": "contracts/resolvers/profiles/NameResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ResolverBase.sol",
+        "./INameResolver.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "NameResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/Multicallable.sol": {
+      "lastModificationDate": 1681526933430,
+      "contentHash": "6ba1e69bee76c9860d95cb605b30e1c2",
+      "sourceName": "contracts/resolvers/Multicallable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IMulticallable.sol",
+        "@openzeppelin/contracts/utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Multicallable"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/reverseRegistrar/ReverseClaimer.sol": {
+      "lastModificationDate": 1681526933433,
+      "contentHash": "a1ca9edf3fbc54304592e1053001f259",
+      "sourceName": "contracts/reverseRegistrar/ReverseClaimer.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../registry/ENS.sol",
+        "../reverseRegistrar/IReverseRegistrar.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.17 <0.9.0"
+      ],
+      "artifacts": [
+        "ReverseClaimer"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/IMulticallable.sol": {
+      "lastModificationDate": 1681526933430,
+      "contentHash": "bf79048d92f7f82da67612c3ccdb8a1a",
+      "sourceName": "contracts/resolvers/IMulticallable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "IMulticallable"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/reverseRegistrar/IReverseRegistrar.sol": {
+      "lastModificationDate": 1681526933433,
+      "contentHash": "9575d38eba7403dbeff3eb5fe6eefb04",
+      "sourceName": "contracts/reverseRegistrar/IReverseRegistrar.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "IReverseRegistrar"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/reverseRegistrar/ReverseRegistrar.sol": {
+      "lastModificationDate": 1681526933433,
+      "contentHash": "4453b40bd94f9d57252dd5f380fb1d91",
+      "sourceName": "contracts/reverseRegistrar/ReverseRegistrar.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../registry/ENS.sol",
+        "./IReverseRegistrar.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "../root/Controllable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "NameResolver",
+        "ReverseRegistrar"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1681526938309,
+      "contentHash": "834a0dde221759af42b030253315b086",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1681526938309,
+      "contentHash": "ad7c2d0af148c8f9f097d65deeb4da6b",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1681526939187,
+      "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/utils/ERC20Recoverable.sol": {
+      "lastModificationDate": 1681526933434,
+      "contentHash": "7d1ac7c116331417073894c5b9ee88ff",
+      "sourceName": "contracts/utils/ERC20Recoverable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.17 <0.9.0"
+      ],
+      "artifacts": [
+        "ERC20Recoverable"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/test/utils/mocks/MockERC20.sol": {
+      "lastModificationDate": 1681526933472,
+      "contentHash": "b98892dd48471a3401b867bee88710b3",
+      "sourceName": "test/utils/mocks/MockERC20.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.17 <0.9.0"
+      ],
+      "artifacts": [
+        "MockERC20"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/OwnedResolver.sol": {
+      "lastModificationDate": 1681526933430,
+      "contentHash": "ade3dab3b7ea47267985a1c246fdf455",
+      "sourceName": "contracts/resolvers/OwnedResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./profiles/ABIResolver.sol",
+        "./profiles/AddrResolver.sol",
+        "./profiles/ContentHashResolver.sol",
+        "./profiles/DNSResolver.sol",
+        "./profiles/InterfaceResolver.sol",
+        "./profiles/NameResolver.sol",
+        "./profiles/PubkeyResolver.sol",
+        "./profiles/TextResolver.sol",
+        "./profiles/ExtendedResolver.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "OwnedResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/ExtendedResolver.sol": {
+      "lastModificationDate": 1681526933431,
+      "contentHash": "3c8615b4c51a90cca9ffd34f825c1bd4",
+      "sourceName": "contracts/resolvers/profiles/ExtendedResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "ExtendedResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnsregistrar/OffchainDNSResolver.sol": {
+      "lastModificationDate": 1681526933426,
+      "contentHash": "1db18e53d69da1ff523b592e77988eb5",
+      "sourceName": "contracts/dnsregistrar/OffchainDNSResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../contracts/resolvers/profiles/IAddrResolver.sol",
+        "../../contracts/resolvers/profiles/IExtendedResolver.sol",
+        "../../contracts/resolvers/profiles/IExtendedDNSResolver.sol",
+        "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+        "../dnssec-oracle/BytesUtils.sol",
+        "../dnssec-oracle/DNSSEC.sol",
+        "../dnssec-oracle/RRUtils.sol",
+        "../registry/ENSRegistry.sol",
+        "../utils/HexUtils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "IDNSGateway",
+        "OffchainDNSResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/profiles/IExtendedDNSResolver.sol": {
+      "lastModificationDate": 1681526933432,
+      "contentHash": "8bb99a325a2bcefb98700fe3e986699b",
+      "sourceName": "contracts/resolvers/profiles/IExtendedDNSResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "IExtendedDNSResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/utils/TestHexUtils.sol": {
+      "lastModificationDate": 1681526933434,
+      "contentHash": "0e3a9856101324d6bd36291064a274ee",
+      "sourceName": "contracts/utils/TestHexUtils.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./HexUtils.sol"
+      ],
+      "versionPragmas": [
+        "~0.8.17"
+      ],
+      "artifacts": [
+        "TestHexUtils"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/registry/ENSRegistryWithFallback.sol": {
+      "lastModificationDate": 1681526933430,
+      "contentHash": "55e4f24aeb7122fc8fe72789e897c3f7",
+      "sourceName": "contracts/registry/ENSRegistryWithFallback.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ENS.sol",
+        "./ENSRegistry.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "ENSRegistryWithFallback"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/test/dnssec-oracle/TestRRUtils.sol": {
+      "lastModificationDate": 1681526933470,
+      "contentHash": "ca73e2c107e5d3de769cba56b2a0a975",
+      "sourceName": "test/dnssec-oracle/TestRRUtils.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../contracts/dnssec-oracle/RRUtils.sol",
+        "../../contracts/dnssec-oracle/BytesUtils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "TestRRUtils"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/test/dnssec-oracle/TestBytesUtils.sol": {
+      "lastModificationDate": 1681526933470,
+      "contentHash": "4d4f57244e64b0afd3131af3ddf08915",
+      "sourceName": "test/dnssec-oracle/TestBytesUtils.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../contracts/dnssec-oracle/RRUtils.sol",
+        "../../contracts/dnssec-oracle/BytesUtils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "TestBytesUtils"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnssec-oracle/digests/SHA256Digest.sol": {
+      "lastModificationDate": 1681526933429,
+      "contentHash": "3861a68d6dbd7c1225fef37f3a7765e9",
+      "sourceName": "contracts/dnssec-oracle/digests/SHA256Digest.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Digest.sol",
+        "../BytesUtils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "SHA256Digest"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnssec-oracle/digests/Digest.sol": {
+      "lastModificationDate": 1681526933429,
+      "contentHash": "1de31b03d4cda8b9c2f7b31f902158f8",
+      "sourceName": "contracts/dnssec-oracle/digests/Digest.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Digest"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnssec-oracle/digests/SHA1Digest.sol": {
+      "lastModificationDate": 1681526933429,
+      "contentHash": "8bb91a66468a57c559385ad710422b6b",
+      "sourceName": "contracts/dnssec-oracle/digests/SHA1Digest.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Digest.sol",
+        "../BytesUtils.sol",
+        "@ensdomains/solsha1/contracts/SHA1.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "SHA1Digest"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/node_modules/@ensdomains/solsha1/contracts/SHA1.sol": {
+      "lastModificationDate": 1681526937004,
+      "contentHash": "638f88057a171461b5a00dc84fd024a5",
+      "sourceName": "@ensdomains/solsha1/contracts/SHA1.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "SHA1"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnssec-oracle/algorithms/RSASHA1Algorithm.sol": {
+      "lastModificationDate": 1681526933429,
+      "contentHash": "e715dc69743ed409274e8adcff5e529a",
+      "sourceName": "contracts/dnssec-oracle/algorithms/RSASHA1Algorithm.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Algorithm.sol",
+        "../BytesUtils.sol",
+        "./RSAVerify.sol",
+        "@ensdomains/solsha1/contracts/SHA1.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "RSASHA1Algorithm"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnssec-oracle/algorithms/Algorithm.sol": {
+      "lastModificationDate": 1681526933428,
+      "contentHash": "edb5a6d56c44c32cb6b5f4a0bc8cad07",
+      "sourceName": "contracts/dnssec-oracle/algorithms/Algorithm.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Algorithm"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnssec-oracle/algorithms/RSAVerify.sol": {
+      "lastModificationDate": 1681526933429,
+      "contentHash": "62fd48cef80f199b045e335523960445",
+      "sourceName": "contracts/dnssec-oracle/algorithms/RSAVerify.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../BytesUtils.sol",
+        "./ModexpPrecompile.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "RSAVerify"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnssec-oracle/algorithms/ModexpPrecompile.sol": {
+      "lastModificationDate": 1681526933429,
+      "contentHash": "1e5391028cc1c778dd2c8bd72e5ea9ef",
+      "sourceName": "contracts/dnssec-oracle/algorithms/ModexpPrecompile.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "ModexpPrecompile"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnssec-oracle/algorithms/RSASHA256Algorithm.sol": {
+      "lastModificationDate": 1681526933429,
+      "contentHash": "ce46567ecb22925decb26e46fbad5425",
+      "sourceName": "contracts/dnssec-oracle/algorithms/RSASHA256Algorithm.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Algorithm.sol",
+        "../BytesUtils.sol",
+        "./RSAVerify.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "RSASHA256Algorithm"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnssec-oracle/algorithms/P256SHA256Algorithm.sol": {
+      "lastModificationDate": 1681526933429,
+      "contentHash": "8ae6454352ddca18e77187712031f3ee",
+      "sourceName": "contracts/dnssec-oracle/algorithms/P256SHA256Algorithm.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Algorithm.sol",
+        "./EllipticCurve.sol",
+        "../BytesUtils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "P256SHA256Algorithm"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnssec-oracle/algorithms/EllipticCurve.sol": {
+      "lastModificationDate": 1681526933429,
+      "contentHash": "b44e57a1e09a587f354b25c7a4aa92c1",
+      "sourceName": "contracts/dnssec-oracle/algorithms/EllipticCurve.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "EllipticCurve"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnssec-oracle/algorithms/DummyAlgorithm.sol": {
+      "lastModificationDate": 1681526933428,
+      "contentHash": "3f7d7ea1003dad4498f991d42e49910d",
+      "sourceName": "contracts/dnssec-oracle/algorithms/DummyAlgorithm.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Algorithm.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "DummyAlgorithm"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnssec-oracle/DNSSECImpl.sol": {
+      "lastModificationDate": 1681526933428,
+      "contentHash": "0f163b3262584bfda5cc5ed5c08e561d",
+      "sourceName": "contracts/dnssec-oracle/DNSSECImpl.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Owned.sol",
+        "./BytesUtils.sol",
+        "./RRUtils.sol",
+        "./DNSSEC.sol",
+        "./algorithms/Algorithm.sol",
+        "./digests/Digest.sol",
+        "@ensdomains/buffer/contracts/Buffer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "DNSSECImpl"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnssec-oracle/Owned.sol": {
+      "lastModificationDate": 1681526933428,
+      "contentHash": "e88b10552c418b9a22d147058b8c5be8",
+      "sourceName": "contracts/dnssec-oracle/Owned.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Owned"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnssec-oracle/digests/DummyDigest.sol": {
+      "lastModificationDate": 1681526933429,
+      "contentHash": "0e74a6c0d1e9a023fed6432566bb02ff",
+      "sourceName": "contracts/dnssec-oracle/digests/DummyDigest.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Digest.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "DummyDigest"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnsregistrar/TLDPublicSuffixList.sol": {
+      "lastModificationDate": 1681526933427,
+      "contentHash": "7fb0d3da62112107f2e0247b4a605cf6",
+      "sourceName": "contracts/dnsregistrar/TLDPublicSuffixList.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../dnssec-oracle/BytesUtils.sol",
+        "./PublicSuffixList.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "TLDPublicSuffixList"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnsregistrar/SimplePublicSuffixList.sol": {
+      "lastModificationDate": 1681526933426,
+      "contentHash": "cf48a2f3de432923e1114b6c4261295a",
+      "sourceName": "contracts/dnsregistrar/SimplePublicSuffixList.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../root/Ownable.sol",
+        "./PublicSuffixList.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "SimplePublicSuffixList"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/root/Ownable.sol": {
+      "lastModificationDate": 1681526933433,
+      "contentHash": "f4fbe0e1d7ba81940c7d328e3cd7cef7",
+      "sourceName": "contracts/root/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnsregistrar/RecordParser.sol": {
+      "lastModificationDate": 1681526933426,
+      "contentHash": "cd9cd5a10abd656293179307bffe7c4d",
+      "sourceName": "contracts/dnsregistrar/RecordParser.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../dnssec-oracle/BytesUtils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.11"
+      ],
+      "artifacts": [
+        "RecordParser"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnsregistrar/mocks/DummyExtendedDNSSECResolver.sol": {
+      "lastModificationDate": 1681526933427,
+      "contentHash": "e1ea533afa822541fb341706b5634dfd",
+      "sourceName": "contracts/dnsregistrar/mocks/DummyExtendedDNSSECResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../resolvers/profiles/IExtendedDNSResolver.sol",
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "DummyExtendedDNSSECResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnsregistrar/mocks/DummyLegacyTextResolver.sol": {
+      "lastModificationDate": 1681526933427,
+      "contentHash": "95a17cf314835a0095a5038805215ece",
+      "sourceName": "contracts/dnsregistrar/mocks/DummyLegacyTextResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../resolvers/profiles/ITextResolver.sol",
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "DummyLegacyTextResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/utils/TestNameEncoder.sol": {
+      "lastModificationDate": 1681526933434,
+      "contentHash": "1ff40c02400b13a0e334299f2bba98d6",
+      "sourceName": "contracts/utils/TestNameEncoder.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./NameEncoder.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.13"
+      ],
+      "artifacts": [
+        "TestNameEncoder"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/registry/TestRegistrar.sol": {
+      "lastModificationDate": 1681526933430,
+      "contentHash": "d2f7559809996927c45d92663912a27d",
+      "sourceName": "contracts/registry/TestRegistrar.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ENS.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "TestRegistrar"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/registry/FIFSRegistrar.sol": {
+      "lastModificationDate": 1681526933430,
+      "contentHash": "2f00b2ff67afdf7a63a91601892fdab2",
+      "sourceName": "contracts/registry/FIFSRegistrar.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ENS.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "FIFSRegistrar"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnsregistrar/mocks/DummyDnsRegistrarDNSSEC.sol": {
+      "lastModificationDate": 1681526933427,
+      "contentHash": "9867e94277e1dad466a55f17ec58aaea",
+      "sourceName": "contracts/dnsregistrar/mocks/DummyDnsRegistrarDNSSEC.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "DummyDNSSEC"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/dnssec-oracle/SHA1.sol": {
+      "lastModificationDate": 1681526933428,
+      "contentHash": "8ddf1436658e1fcb71f85cd1dea30267",
+      "sourceName": "contracts/dnssec-oracle/SHA1.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "SHA1"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/ethregistrar/mocks/DummyProxyRegistry.sol": {
+      "lastModificationDate": 1681526933430,
+      "contentHash": "ac3fdf73648c1487b78840218bb0db33",
+      "sourceName": "contracts/ethregistrar/mocks/DummyProxyRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "DummyProxyRegistry"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/resolvers/mocks/DummyNameWrapper.sol": {
+      "lastModificationDate": 1681526933431,
+      "contentHash": "43bd5405f1677a4453980d324fd9671b",
+      "sourceName": "contracts/resolvers/mocks/DummyNameWrapper.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "DummyNameWrapper"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/test/utils/mocks/LegacyResolver.sol": {
+      "lastModificationDate": 1681526933472,
+      "contentHash": "5872031fcba2488397442845cd2e31cc",
+      "sourceName": "test/utils/mocks/LegacyResolver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1300
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.13"
+      ],
+      "artifacts": [
+        "LegacyResolver"
+      ]
+    },
+    "/Users/mmaali/cod4rena/2023-04-ens/contracts/utils/DummyOldResolver.sol": {
+      "lastModificationDate": 1681526933433,
+      "contentHash": "b1b9767ae6c7dd5491e0f7b9fe1c237b",
+      "sourceName": "contracts/utils/DummyOldResolver.sol",
+      "solcConfig": {
+        "version": "0.4.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.4.11"
+      ],
+      "artifacts": [
+        "DummyOldResolver"
+      ]
+    }
+  }
+}
