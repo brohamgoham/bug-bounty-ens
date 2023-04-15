@@ -4,7 +4,7 @@ interface IReverseRegistrar {
     function setDefaultResolver(address resolver) external;
 
     function claim(address owner) external returns (bytes32);
-
+    
     function claimForAddr(
         address addr,
         address owner,
